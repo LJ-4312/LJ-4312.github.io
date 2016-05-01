@@ -2,10 +2,110 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>demo</title>
+	<title>Demo列表</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		/*pc端*/
+		@media (min-width: 769px) {
+			.container, .main-wrap, .left, .right{
+				border:1px solid #e0dfcc;
+			}
+			.container{
+				width: 96%;
+				margin:auto;
+				overflow: auto;
+				padding:20px;
+				overflow: auto;
+				background-color: #f5f5d5;	
+				margin-top:20px;
+			}
+			.container .main{
+				float:left;
+				width:100%;
+				min-height: 10px;
+				background-color: #f5f5d5;
+			}
+			.left{
+				float:left;
+				width:200px;
+				min-height: 120px;
+				margin-left: -100%;
+				background-color: #f5f2f0;
+				padding:20px;
+			}
+			.right{
+				float:left;
+				width:120px;
+				min-height: 10px;
+				margin-left: -120px;
+				background-color: #111;
+				background-color: #f5f2f0;
+				overflow: auto;
+				padding:20px;
+			}
+			.main-wrap{
+				margin-left:220px;
+				margin-right: 140px;
+				background-color: #f5f2f0;
+				padding:20px;
+				overflow: auto;
+			}
+			img{
+				width:80px;
+				height:80px;
+				float: left;
+				vertical-align: text-top;
+			}
+			.right img{
+				margin-top:20px;
+			}
+			img:first-child{
+				margin:0;
+			}
+			.left img{
+				margin-right: 10px;
+			}
+			.link{
+				width:40%;
+			}
+		}
+
+		/*手机端*/
+		@media (max-width: 768px) {
+			.link{
+				display: inline-block;
+				width:90%;
+			}
+		}
+
+
+	</style>
 </head>
 <body>
-	<a href="http://lj-4312.github.io/demo/task2-13.html">第一个</a>
-	<a href="http://lj-4312.github.io/demo/task2-14.html">第二个</a>
+	<div class="container">
+		<div class="main">
+			<div class="main-wrap">
+				<a class="link" target="_blank" href="http://lj-4312.github.io/demo/task2-13.html">第一个</a>
+				<a class="link" target="_blank" href="http://lj-4312.github.io/demo/task2-14.html">第二个</a>
+			</div>
+		</div>
+
+		<div class="left">
+			<img src="demo/img/index.jpg">
+			嘿嘿嘿
+		</div>
+
+		<div class="right">
+			<img src="demo/img/index.jpg">
+			<img src="demo/img/index.jpg">
+			<img src="demo/img/index.jpg">
+			<img src="demo/img/index.jpg">
+			<img src="demo/img/index.jpg">
+		</div>
+	</div>
 </body>
 </html>
